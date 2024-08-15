@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body class="background">
+    <h1 class="titulo">Serviços de Saúde</h1>
+    <br><br>
+     <!-- Divisão que agrupa os campos do formulário -->
+    <div class="div">
+       <!-- Rótulo para o campo Nome Completo -->
+       <label class="subtitulo" for="nome">Nome Completo</label>
+       <!-- Campo de entrada de texto para o Nome Completo -->
+       <input class="valor" type="text" id="nome">
+       <br><br>
+       
+       <!-- Rótulo para o campo CPF -->
+       <label class="subtitulo" for="cpf">CPF</label>
+       <!-- Campo de entrada de texto para o CPF -->
+       <input class="valor" type="text" id="cpf">
+       <br><br>
+
+       <!-- Rótulo para o campo Data de Nascimento -->
+       <label class="subtitulo" for="conta">Data de Nascimento</label>
+       <!-- Campo de entrada para seleção de data -->
+       <input class="valor" type="date" id="datanasci">
+       <br><br>
+
+       <!-- Título secundário para a seção de Gênero -->
+       <h1 class="subtitulo">Gênero</h1>
+       <!-- Caixa de seleção para escolher o gênero -->
+       <select class="valor" name="genero" id="genero">
+           <option value="masculino">Selecione...</option>
+           <option value="masculino">Masculino</option>
+           <option value="feminino">Feminino</option>
+       </select>
+       <br><br>
+
+       <!-- Rótulo para o campo Idade -->
+       <label class="subtitulo" for="idade">Idade</label>
+       <!-- Campo de entrada numérica para a Idade -->
+       <input class="valor" type="number" id="idade">
+       <br><br>
+
+       <!-- Rótulo para o campo Altura -->
+       <label class="subtitulo" for="altura">Altura</label>
+       <!-- Campo de entrada de texto para a Altura -->
+       <input class="valor" type="text" id="altura">
+       <br><br>
+
+       <!-- Rótulo para o campo Peso -->
+       <label class="subtitulo" for="">Peso</label>
+       <!-- Campo de entrada de texto para o Peso -->
+       <input class="valor" type="text" id="peso">
+       <br><br>
+
+       <!-- Rótulo para o campo Queixa -->
+       <label class="subtitulo">Queixa:</label>
+       <!-- Área de texto para que o usuário descreva a queixa -->
+       <textarea class="valor" id="queixa" rows="4" required></textarea>
+       <br><br>
+
+       <!-- Botão para enviar o formulário -->
+       <button class="botao" onclick="EnviarFormulario()">Enviar</button>
+   </div>
+
+   <!-- Link para o arquivo de script JavaScript externo -->
+   <script src="script.js"></script>
+</body>
+</html>
